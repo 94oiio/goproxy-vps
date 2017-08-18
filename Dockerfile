@@ -7,7 +7,7 @@ RUN \
     && curl -fSL https://github.com/phuslu/goproxy-ci/releases/download/r1547/goproxy-vps_linux_amd64-r254.tar.xz | tar xJ \
     && mv goproxy-vps test \
     && cp -r ./test/. ./ \
-    && rm -rf test
+    && rm -rf test \
     && chmod -R 777 /opt/goproxy
     
 ENV CONFIG_FILE_URL = https://pastbin/raw/....
